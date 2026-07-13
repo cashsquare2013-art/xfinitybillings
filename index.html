@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinetic - Webmail Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <!-- Logo -->
+            <div class="logo">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Colorful spiral design -->
+                    <defs>
+                        <linearGradient id="kineticGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#00C9A7;stop-opacity:1" />
+                            <stop offset="50%" style="stop-color:#FFD700;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#FF6B6B;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <circle cx="100" cy="100" r="90" fill="url(#kineticGradient)" opacity="0.2"/>
+                    <path d="M100 30 Q150 50 160 100 Q150 150 100 170 Q50 150 40 100 Q50 50 100 30" fill="none" stroke="url(#kineticGradient)" stroke-width="8" stroke-linecap="round"/>
+                    <circle cx="100" cy="100" r="15" fill="url(#kineticGradient)"/>
+                </svg>
+            </div>
+            
+            <h1 class="brand">kinetic</h1>
+            <p class="subtitle">Webmail Login</p>
+            
+            <!-- Login Form -->
+            <form class="login-form" id="loginForm">
+                <div class="form-group">
+                    <label for="email">EMAIL ADDRESS</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="Email Address"
+                        required
+                    >
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">PASSWORD</label>
+                    <div class="password-wrapper">
+                        <input 
+                            type="password" 
+                            id="password" 
+                            name="password" 
+                            placeholder="Password"
+                            required
+                        >
+                        <button type="button" class="show-password" id="showPasswordBtn">SHOW</button>
+                    </div>
+                </div>
+                
+                <div class="remember-me">
+                    <input type="checkbox" id="rememberMe" name="rememberMe">
+                    <label for="rememberMe">Remember Me ?</label>
+                </div>
+                
+                <button type="submit" class="login-btn">LOG IN</button>
+            </form>
+            
+            <!-- Help Links -->
+            <div class="help-links">
+                <a href="#forgot-password">Forgot Your Password or Need to Reset It?</a>
+                <a href="#email-identity">Email Identity Dashboard</a>
+                <a href="#support">Login Support Page</a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
